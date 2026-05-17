@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fyr Lois Presencial · Inglés en vivo en Caracas, Barquisimeto y Puerto Ordaz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap">
+<style>
+  :root{
+    --navy:#1a237e;
+    --navy-deep:#0f1761;
+    --green:#7ac142;
+    --green-2:#5fa733;
+    --orange:#f5a623;
+    --yellow:#ffd400;
+    --ink:#0e1340;
+    --muted:#6b7196;
+    --soft:#f4f5f8;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{font-family:'Montserrat',system-ui,sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 28px}
+
+  .ph{position:relative;background:linear-gradient(135deg,#e8ecf3,#f4f5f8);border:2px dashed #b8c0d4;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;color:#5a6480;font-weight:800;letter-spacing:.4px;font-size:11px;line-height:1.4;padding:14px;overflow:hidden;text-transform:uppercase}
+  .ph::before{content:"📷";font-size:24px;display:block;margin-bottom:6px;opacity:.6}
+  .ph .pdesc{font-weight:600;color:#7d8aa6;font-size:10px;letter-spacing:.2px;text-transform:none;margin-top:4px;max-width:90%}
+
+  /* NAV */
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;max-width:1200px;margin:0 auto;gap:18px;flex-wrap:wrap}
+  .logo{display:inline-flex;line-height:0}
+  .logo img{height:38px;width:auto}
+
+  .cta-pill{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(180deg,#2752c8,var(--navy));color:#fff;font-weight:800;padding:13px 22px;border-radius:999px;box-shadow:0 6px 14px rgba(26,35,126,.35);border:none;cursor:pointer;font-size:14px;transition:transform .15s ease, box-shadow .15s ease}
+  .cta-pill:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(26,35,126,.4)}
+  .cta-pill .wa{width:26px;height:26px;border-radius:50%;background:#fff;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+  .cta-pill .wa img{width:16px;height:16px;display:block}
+  .cta-pill.green{background:linear-gradient(180deg,#9ad96a,var(--green-2));box-shadow:0 6px 14px rgba(95,167,51,.35)}
+  .cta-pill.huge{font-size:17px;padding:18px 32px}
+  .wa-fab img{width:30px;height:30px;display:block}
+
+  /* HERO */
+  .hero{position:relative;min-height:620px;color:#fff;overflow:visible;display:flex;align-items:center;background:#0a0f3d}
+  .hero-bg-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 32%;z-index:0}
+  .hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(10,15,61,.92) 0%,rgba(10,15,61,.65) 45%,rgba(10,15,61,.2) 75%,transparent 100%)}
+  .hero-grid{position:relative;display:grid;grid-template-columns:1fr;gap:40px;align-items:center;z-index:2;width:100%;padding:60px 0}
+
+  .hero-card{position:relative;overflow:visible;background:linear-gradient(180deg,#1d2a8e,#0f1761);border-radius:22px;padding:40px 36px 30px 44px;box-shadow:0 30px 60px rgba(0,0,0,.4);color:#fff;max-width:560px;border:1px solid rgba(255,255,255,.08)}
+  .hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(122,193,66,.18);color:#9ad96a;font-weight:900;font-size:11px;letter-spacing:2px;padding:6px 12px;border-radius:999px;margin-bottom:18px}
+  .hero-eyebrow::before{content:"●";font-size:8px;color:#7ac142}
+
+  h1.hero-h{margin:0 0 14px;font-weight:900;font-size:40px;line-height:1.04;letter-spacing:-1.2px}
+  h1.hero-h .o{color:var(--orange)}
+  h1.hero-h .g{color:var(--green)}
+  .hero-sub{margin:0 0 22px;color:#cdd4ff;font-size:15px;font-weight:500;line-height:1.55}
+  .hero-sub b{color:#fff;font-weight:800}
+
+  .hero-bullets{list-style:none;padding:0;margin:0 0 22px;display:flex;flex-direction:column;gap:8px}
+  .hero-bullets li{display:flex;gap:10px;align-items:center;font-size:13.5px;font-weight:700;color:#fff}
+  .hero-bullets li::before{content:"✓";color:var(--green);font-weight:900;font-size:14px;width:18px;height:18px;background:rgba(122,193,66,.18);border-radius:50%;display:inline-flex;align-items:center;justify-content:center}
+
+  .hero-ctas{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .hero-ctas .ghost{font-weight:800;color:#9aa0c8;font-size:11px;letter-spacing:.3px}
+
+  .hero-medal{position:absolute;left:-18px;top:-18px;width:96px;height:96px;border-radius:50%;background:linear-gradient(135deg,var(--orange),#d4811a);color:#fff;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;font-weight:900;font-size:10px;letter-spacing:.8px;line-height:1.1;box-shadow:0 12px 28px rgba(245,166,35,.4);border:4px solid #fff;transform:rotate(-6deg);z-index:4}
+  .hero-medal b{font-size:22px;letter-spacing:-.5px;display:block;margin-bottom:2px;line-height:1}
+
+  /* PROMO STRIP */
+  .promo-strip{background:#fff;padding:36px 0;border-bottom:1px solid #eef0f6}
+  .promo-row{display:grid;grid-template-columns:1.2fr auto auto;gap:36px;align-items:center}
+  .promo-left .pre{margin:0 0 6px;font-weight:900;color:var(--green-2);font-size:11px;letter-spacing:2px}
+  .promo-left h2{margin:0 0 6px;font-weight:900;font-size:30px;color:var(--navy);letter-spacing:-.5px;line-height:1.05}
+  .promo-left h2 .g{color:var(--green)}
+  .promo-left p{margin:0;font-weight:600;font-size:13px;color:var(--muted)}
+
+  .promo-price{text-align:center}
+  .promo-price .lbl{font-weight:900;font-size:10px;letter-spacing:1.8px;margin:0 0 4px;color:var(--muted)}
+  .promo-price .full{margin:0;text-decoration:line-through;font-weight:700;font-size:14px;color:var(--muted)}
+  .promo-price .now{margin:0;font-weight:900;font-size:42px;letter-spacing:-1px;line-height:1;color:var(--green)}
+  .promo-price .save{display:inline-block;margin-top:4px;background:var(--orange);color:#fff;font-weight:900;font-size:11px;letter-spacing:.8px;padding:3px 10px;border-radius:4px}
+
+  .promo-flip{text-align:center}
+  .flip{display:flex;gap:6px;justify-content:center}
+  .flip .digit{position:relative;width:46px;height:62px;border-radius:6px;background:linear-gradient(180deg,#fff 0%,#f0f2f7 50%,#f0f2f7 50.1%,#dfe2ec 100%);box-shadow:inset 0 0 0 2px rgba(0,0,0,.08), 0 4px 10px rgba(0,0,0,.1);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:36px;color:var(--navy);overflow:hidden}
+  .flip .digit:nth-child(2){color:var(--green)}
+  .flip .digit::before{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:rgba(0,0,0,.15)}
+  .flip-label{color:var(--navy);font-weight:900;font-size:10px;letter-spacing:1.2px;margin-top:8px}
+
+  /* LOGOS */
+  .logos{background:var(--soft);padding:36px 0;text-align:center}
+  .logos .head{font-weight:900;font-size:11px;letter-spacing:2.5px;color:var(--muted);margin:0 0 18px}
+  .logos .row{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:38px}
+  .logo-slot{height:46px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:11px;color:#a0a8c2;border:1px dashed #c8cee0;padding:0 18px;border-radius:6px;background:#fff;letter-spacing:.5px}
+
+  /* PAIN — what's the current situation */
+  .pain{padding:80px 0;background:#fff}
+  .pain-h{text-align:center;margin-bottom:46px;max-width:780px;margin-left:auto;margin-right:auto}
+  .pain-h .pre{color:var(--orange);font-weight:900;font-size:12px;letter-spacing:3px;margin:0 0 10px;display:inline-block}
+  .pain-h h2{margin:0;color:var(--navy);font-weight:900;font-size:38px;letter-spacing:-.8px;line-height:1.05}
+  .pain-h h2 b{color:var(--green)}
+  .pain-h p{margin:14px 0 0;color:#3a4070;font-weight:500;font-size:15px;line-height:1.55}
+
+  .pain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .pain-card{background:#f4f5f8;border-radius:14px;padding:24px 22px;border-left:5px solid var(--orange);position:relative}
+  .pain-card:nth-child(2){border-left-color:var(--navy)}
+  .pain-card:nth-child(3){border-left-color:var(--green)}
+  .pain-card .em{font-size:28px;display:block;margin-bottom:10px;line-height:1}
+  .pain-card h3{margin:0 0 6px;color:var(--navy);font-weight:900;font-size:15px;letter-spacing:.2px;line-height:1.25}
+  .pain-card p{margin:0;color:#3a4070;font-size:13px;font-weight:500;line-height:1.5}
+
+  /* METHOD — why Fyr Lois (5 reasons, redesigned) */
+  .method{background:var(--soft);padding:80px 0}
+  .method-h{text-align:center;margin-bottom:44px}
+  .method-h .pre{color:var(--green-2);font-weight:900;font-size:12px;letter-spacing:3px;margin:0 0 10px;display:inline-block}
+  .method-h h2{margin:0;color:var(--navy);font-weight:900;font-size:38px;letter-spacing:-.8px;line-height:1.05}
+  .method-h h2 b{color:var(--green)}
+  .method-h p{margin:14px auto 0;color:#3a4070;font-weight:500;font-size:15px;max-width:620px;line-height:1.55}
+
+  .reasons{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1080px;margin:0 auto}
+  .reason{background:#fff;border-radius:14px;padding:24px 22px;display:flex;gap:16px;align-items:flex-start;box-shadow:0 4px 14px rgba(15,23,97,.06);border:1px solid #e6eaf3}
+  .reason .n{flex-shrink:0;width:50px;height:50px;border-radius:14px;background:var(--navy);color:var(--green);display:flex;align-items:center;justify-content:center;font-weight:900;font-style:italic;font-size:26px;line-height:1}
+  .reason:nth-child(2) .n{background:var(--green);color:#fff}
+  .reason:nth-child(3) .n{background:var(--orange);color:#fff}
+  .reason:nth-child(4) .n{background:var(--navy);color:var(--orange)}
+  .reason:nth-child(5) .n{background:var(--green-2);color:#fff}
+  .reason h3{margin:0 0 4px;color:var(--navy);font-weight:900;font-size:14px;letter-spacing:.4px;text-transform:uppercase}
+  .reason p{margin:0;color:#3a4070;font-size:13px;font-weight:500;line-height:1.5}
+
+  .method-cta{margin-top:40px;text-align:center;background:#fff;border-radius:18px;padding:32px;border:2px dashed #d5dbeb;max-width:780px;margin-left:auto;margin-right:auto}
+  .method-cta h3{margin:0 0 8px;color:var(--navy);font-weight:900;font-size:26px;letter-spacing:-.4px}
+  .method-cta h3 .o{color:var(--orange)}
+  .method-cta p{margin:0 0 18px;color:#3a4070;font-size:14px;font-weight:600}
+
+  /* PRICING */
+  .pricing{padding:80px 0;background:#fff}
+  .pricing-h{text-align:center;margin-bottom:14px}
+  .pricing-h h2{margin:0;color:var(--navy);font-weight:900;font-size:38px;letter-spacing:-.8px}
+  .pricing-h h2 .g{color:var(--green)}
+  .pricing-h p{margin:8px 0 0;color:var(--navy);font-weight:800;font-size:14px;letter-spacing:.4px}
+  .pricing-h .sub{color:var(--muted);font-weight:600;letter-spacing:0;text-transform:none;font-size:13px;margin-top:4px}
+  .plans{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:880px;margin:40px auto 0}
+  .plan{border:2px solid #e6eaf3;border-radius:18px;padding:30px 28px;text-align:center;position:relative;background:#fff}
+  .plan.featured{border-color:var(--green);box-shadow:0 12px 30px rgba(122,193,66,.12)}
+  .plan .pre{font-weight:900;font-size:11px;letter-spacing:2.2px;color:var(--green-2);margin:0 0 4px}
+  .plan h3{margin:0 0 4px;color:var(--navy);font-weight:900;font-size:24px;letter-spacing:-.4px}
+  .plan .module{font-weight:900;font-size:34px;color:var(--green);margin:14px 0 0;letter-spacing:-.5px;line-height:1}
+  .plan .mod-meta{font-weight:800;font-size:12px;letter-spacing:1.5px;color:var(--muted);margin:2px 0 14px}
+  .plan .was{text-decoration:line-through;color:var(--muted);font-weight:700;font-size:13px;margin:0}
+  .plan .now{font-weight:900;font-size:38px;color:var(--navy);margin:6px 0 4px;letter-spacing:-.8px;line-height:1}
+  .plan .extra{font-weight:700;font-size:12px;color:var(--muted);margin:0}
+  .plan .dto{display:inline-block;margin:14px 0;background:var(--orange);color:#fff;font-weight:900;font-size:12px;letter-spacing:.8px;padding:6px 14px;border-radius:6px}
+  .plan.featured .dto{background:var(--green)}
+  .plan .b{display:block;width:100%;font-weight:900;font-size:13px;letter-spacing:.4px;padding:14px;border-radius:10px;background:var(--navy);color:#fff;border:none;cursor:pointer;margin-top:8px}
+  .plan.featured .b{background:var(--green);color:#fff}
+
+  .pricing-note{text-align:center;margin:32px auto 0;max-width:560px;color:var(--muted);font-weight:600;font-size:13px;line-height:1.5}
+
+  /* HQ / locations */
+  .sedes{padding:70px 0;background:var(--soft)}
+  .sedes h2{text-align:center;margin:0 0 32px;color:var(--navy);font-weight:900;font-size:34px;letter-spacing:-.5px}
+  .sedes h2 b{color:var(--green)}
+  .sedes .sub{text-align:center;color:var(--muted);font-weight:600;font-size:13px;margin:-22px 0 30px}
+  .sedes-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .sede{background:#fff;border-radius:14px;padding:18px;text-align:center;border:1px solid #e6eaf3;transition:transform .15s ease, border-color .15s ease}
+  .sede:hover{transform:translateY(-3px);border-color:var(--green)}
+  .sede .city{font-weight:900;font-size:11px;letter-spacing:2px;color:var(--muted);margin:0 0 10px}
+  .sede .sede-photo{aspect-ratio:1/1;border-radius:12px;margin-bottom:14px;overflow:hidden;border:1px solid #e6eaf3;background:#eef1f8}
+  .sede .sede-photo img{width:100%;height:100%;object-fit:cover;display:block}
+  .sede .name{font-weight:900;font-size:15px;color:var(--orange);letter-spacing:.4px;margin-bottom:6px}
+  .sede .addr{font-weight:600;font-size:11.5px;color:var(--ink);line-height:1.45}
+
+  /* TESTI */
+  .testi{padding:80px 0;background:#fff}
+  .testi-h{text-align:center;margin-bottom:36px}
+  .testi-h .pre{color:var(--green-2);font-weight:900;font-size:12px;letter-spacing:3px;display:inline-block;margin:0 0 10px}
+  .testi-h h2{margin:0;color:var(--navy);font-weight:900;font-size:34px;letter-spacing:-.5px}
+  .testi-h h2 b{color:var(--green)}
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1080px;margin:0 auto}
+  .quote{position:relative;background:#fff;border-radius:14px;padding:30px 24px 22px;border:1px solid #e6eaf3;box-shadow:0 6px 18px rgba(15,23,97,.05)}
+  .quote .qm{position:absolute;top:14px;left:18px;font-size:48px;font-weight:900;color:var(--green);font-family:Georgia,serif;line-height:1}
+  .quote p{color:var(--ink);font-weight:600;font-size:13px;line-height:1.55;margin:26px 0 16px}
+  .quote p b{color:var(--navy)}
+  .quote .who{margin-top:4px;padding-top:14px;border-top:1px solid #e6eaf3}
+  .quote .name{font-weight:900;font-size:12px;color:var(--navy);letter-spacing:.3px}
+  .quote .level{color:var(--muted);font-weight:700;font-size:11px;margin-top:2px}
+  .quote .stars{color:var(--orange);font-size:12px;margin-top:4px;letter-spacing:1px}
+
+  /* FAQ */
+  .faq{padding:80px 0;background:var(--soft)}
+  .faq h2{text-align:center;margin:0 0 30px;color:var(--navy);font-weight:900;font-size:34px;letter-spacing:.4px}
+  .faq h2 b{color:var(--green)}
+  .faq-list{max-width:880px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+  .qa{background:#fff;border-radius:12px;padding:16px 24px;border-left:6px solid var(--green);border-right:6px solid var(--navy);cursor:pointer;box-shadow:0 2px 8px rgba(15,23,97,.04)}
+  .qa:nth-child(even){border-left-color:var(--navy);border-right-color:var(--green)}
+  .qa .qrow{display:flex;align-items:center;justify-content:space-between;gap:18px}
+  .qa .q{color:var(--navy);font-weight:900;font-size:13.5px;letter-spacing:.3px;margin:0}
+  .qa .chev{color:var(--navy);font-weight:900;font-size:18px;transition:transform .2s ease}
+  .qa .a{color:var(--ink);font-weight:600;font-size:13px;line-height:1.55;margin:0;max-height:0;overflow:hidden;transition:max-height .25s ease, margin .25s ease}
+  .qa.open .a{max-height:360px;margin-top:8px}
+  .qa.open .chev{transform:rotate(180deg)}
+
+  /* GUARANTEE / risk reversal */
+  .guarantee{padding:60px 0;background:#fff;border-top:1px solid #eef0f6}
+  .guarantee-card{max-width:780px;margin:0 auto;background:linear-gradient(135deg,#fff,var(--soft));border:2px solid var(--green);border-radius:18px;padding:30px 36px;display:flex;align-items:center;gap:26px}
+  .guarantee-card .seal{flex-shrink:0;width:96px;height:96px;display:flex;align-items:center;justify-content:center}
+  .guarantee-card .seal img{width:100%;height:auto;display:block}
+  .guarantee-card h3{margin:0 0 6px;color:var(--navy);font-weight:900;font-size:22px;letter-spacing:-.3px}
+  .guarantee-card p{margin:0;color:#3a4070;font-weight:600;font-size:13.5px;line-height:1.5}
+
+  /* FINAL */
+  .final{padding:90px 0;background:linear-gradient(135deg,var(--navy) 0%,var(--navy-deep) 100%);color:#fff;text-align:center;position:relative;overflow:hidden}
+  .final::before{content:"";position:absolute;bottom:-150px;left:-150px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(122,193,66,.18) 0%,transparent 70%)}
+  .final::after{content:"";position:absolute;top:-150px;right:-150px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(245,166,35,.18) 0%,transparent 70%)}
+  .final h2{margin:0 0 14px;font-weight:900;font-size:46px;letter-spacing:-1px;line-height:1.05;position:relative}
+  .final h2 .g{color:var(--green)}
+  .final h2 .o{color:var(--orange)}
+  .final p{margin:0 0 28px;color:#cdd4ff;font-weight:600;font-size:16px;max-width:620px;margin-left:auto;margin-right:auto;line-height:1.5;position:relative}
+  .final p b{color:#fff;font-weight:900}
+  .final .row{position:relative;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;align-items:center}
+  .final .meta{margin-top:18px;color:#9aa0c8;font-weight:700;font-size:12px;letter-spacing:.5px;position:relative}
+
+  /* WA fab */
+  .wa-fab{position:fixed;right:22px;bottom:22px;width:60px;height:60px;border-radius:50%;background:#25d366;color:#fff;display:inline-flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(37,211,102,.45);z-index:50;cursor:pointer;border:none}
+  .wa-fab::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:2px solid #25d366;opacity:.5;animation:pulse 2s ease-in-out infinite}
+  @keyframes pulse{0%,100%{transform:scale(1);opacity:.5}50%{transform:scale(1.15);opacity:0}}
+
+  footer{background:#0a0f3d;color:#9aa0c8;padding:30px 0;font-size:12px;font-weight:600}
+  footer .row{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+
+  @media (max-width:980px){
+    .hero-grid,.promo-row,.pain-grid,.reasons,.plans,.sedes-grid,.testi-grid{grid-template-columns:1fr}
+    .sedes-grid{grid-template-columns:repeat(2,1fr)}
+    .pain-grid,.reasons,.testi-grid{grid-template-columns:1fr;gap:14px}
+    .guarantee-card{flex-direction:column;text-align:center}
+    h1.hero-h,.pain-h h2,.method-h h2,.pricing-h h2,.testi-h h2,.sedes h2,.final h2{font-size:28px}
+    .promo-row{text-align:center}
+  }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-M5B53KKW");
+</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+  <iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-M5B53KKW"
+    height="0"
+    width="0"
+    style="display:none;visibility:hidden"
+  ></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="nav">
+  <a href="#" class="logo" aria-label="Fyr Lois"><img src="logo-fyrlois.svg" alt="Fyr Lois" width="140" height="53"></a>
+  <a class="cta-pill whatsapp-link" href="#wa">
+    <span class="wa">
+      <img src="social-icons-WA%20Green.svg" alt="" width="16" height="16">
+    </span>
+    Agenda tu nivelación GRATIS
+  </a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <img class="hero-bg-img" src="hero.jpg" alt="Estudiantes adultos en clase presencial Fyr Lois" width="1920" height="1440" decoding="async" fetchpriority="high">
+  <div class="wrap hero-grid">
+    <div class="hero-card">
+      <div class="hero-medal"><b>27</b><span>AÑOS DE EXPERIENCIA</span></div>
+      <span class="hero-eyebrow">CLASES EN VIVO · CARACAS · BARQUISIMETO · PUERTO ORDAZ</span>
+      <h1 class="hero-h">Empieza ahora y lleva tu inglés al <span class="o">siguiente nivel</span> en <span class="g">3 meses</span>.</h1>
+      <p class="hero-sub">Llevas años diciendo "este año sí aprendo inglés". Apps que abandonaste, cursos online que no terminaste, profesores que nunca te corrigieron. <b>Fyr Lois es distinto:</b> clase en vivo, profesor que te ve a los ojos, conversación desde el primer día.</p>
+      <ul class="hero-bullets">
+        <li>Clases en vivo con profesor real (no grabadas, no app)</li>
+        <li>Método Fyr Lois · 27 años · +100.000 alumnos</li>
+        <li>Online o presencial — tú eliges</li>
+      </ul>
+      <div class="hero-ctas">
+        <button class="cta-pill green whatsapp-link" type="button"><span class="wa"><img src="social-icons-WA%20Green.svg" alt="" width="16" height="16"></span>Agenda tu nivelación GRATIS</button>
+        <span class="ghost">⚡ Respuesta &lt; 10 min</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMO STRIP -->
+<section class="promo-strip">
+  <div class="wrap promo-row">
+    <div class="promo-left">
+      <p class="pre">⚡ PROMO ACTIVA · POCOS CUPOS</p>
+      <h2>Primeros 100 inscritos: <span class="g">25% OFF</span></h2>
+      <p>Se aplica al pago inmediato del primer módulo. Sin trucos.</p>
+    </div>
+    <div class="promo-price">
+      <p class="lbl">DESDE</p>
+      <p class="full">$1.280</p>
+      <p class="now">$768</p>
+      <p class="save">40% OFF · PAGO INMEDIATO</p>
+    </div>
+    <div class="promo-flip">
+      <div class="flip">
+        <div class="digit" id="d1">0</div>
+        <div class="digit" id="d2">9</div>
+        <div class="digit" id="d3">5</div>
+      </div>
+      <p class="flip-label">¡CUPOS DISPONIBLES!</p>
+    </div>
+  </div>
+</section>
+
+<!-- LOGOS -->
+<section class="logos">
+  <div class="wrap">
+    <p class="head">LAS EMPRESAS MÁS GRANDES CONFÍAN EN NOSOTROS</p>
+    <div class="row">
+      <div class="logo-slot">CIVG · Centro Italo Venezolano de Guayana</div>
+      <div class="logo-slot">NESTLÉ</div>
+      <div class="logo-slot">TOYOTA</div>
+      <div class="logo-slot">EUROBUILDING HOTELS</div>
+      <div class="logo-slot">ROSA BELA HOTEL &amp; CONVENTION CENTER</div>
+    </div>
+  </div>
+</section>
+
+<!-- PAIN -->
+<section class="pain">
+  <div class="wrap">
+    <div class="pain-h">
+      <span class="pre">SI ESTO TE SUENA…</span>
+      <h2>Llevas años intentando — y el inglés <b>sigue siendo una asignatura pendiente</b>.</h2>
+      <p>No es falta de inteligencia. No es falta de tiempo. Es el método. Apps y cursos grabados no te enseñan a <i>hablar</i> — te enseñan a <i>completar lecciones</i>. Diferentes cosas.</p>
+    </div>
+    <div class="pain-grid">
+      <div class="pain-card">
+        <span class="em">📱</span>
+        <h3>Empezaste Duolingo en enero — y nunca conversaste con nadie</h3>
+        <p>Las apps te dan rachas, no conversaciones. El día que tengas que hablar inglés en una reunión, no te va a salir.</p>
+      </div>
+      <div class="pain-card">
+        <span class="em">💻</span>
+        <h3>Hiciste un curso online y nadie te corrigió</h3>
+        <p>Sin alguien que te escuche y te corrija en tiempo real, los errores se vuelven hábito. Y los hábitos cuestan años de desaprender.</p>
+      </div>
+      <div class="pain-card">
+        <span class="em">⏸️</span>
+        <h3>Sabes inglés básico — pero no te atreves a hablarlo</h3>
+        <p>El miedo a equivocarte te paraliza. Lo que necesitas no es más teoría: necesitas practicar en un lugar donde equivocarte sea parte del proceso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METHOD -->
+<section class="method">
+  <div class="wrap">
+    <div class="method-h">
+      <span class="pre">¿POR QUÉ FYR LOIS?</span>
+      <h2>Porque enseñamos inglés <b>como se aprende un idioma</b> — no como se memoriza una materia.</h2>
+      <p>27 años de método propio. Más de 100,000 alumnos que pasaron por aquí y hoy hablan inglés con confianza. Esta es la diferencia:</p>
+    </div>
+    <div class="reasons">
+      <div class="reason">
+        <div class="n">1</div>
+        <div>
+          <h3>Profesores certificados</h3>
+          <p>Nativos y bilingües, altamente calificados y con experiencia comprobada. Te ven hablar y te corrigen en tiempo real.</p>
+        </div>
+      </div>
+      <div class="reason">
+        <div class="n">2</div>
+        <div>
+          <h3>Clases 100% en inglés</h3>
+          <p>Desde el primer día piensas y hablas en inglés. Sin traducciones. Inmersión real que acelera tu aprendizaje.</p>
+        </div>
+      </div>
+      <div class="reason">
+        <div class="n">3</div>
+        <div>
+          <h3>Horarios flexibles</h3>
+          <p>Mañana, tarde o noche. Online o presencial en 4 sedes. Tú decides cómo y cuándo aprender.</p>
+        </div>
+      </div>
+      <div class="reason">
+        <div class="n">4</div>
+        <div>
+          <h3>Material didáctico incluido</h3>
+          <p>Todo lo que necesitas para aprender está incluido. Sin costos ocultos ni sorpresas.</p>
+        </div>
+      </div>
+      <div class="reason">
+        <div class="n">5</div>
+        <div>
+          <h3>27 años en Caracas</h3>
+          <p>Somos un instituto con experiencia real formando estudiantes. No somos una app más: somos resultados comprobados.</p>
+        </div>
+      </div>
+    </div>
+    <div class="method-cta">
+      <h3>Tu versión bilingüe <span class="o">¡empieza hoy!</span></h3>
+      <p>Agenda tu nivelación gratuita y arma tu plan en menos de 10 minutos por WhatsApp.</p>
+      <button class="cta-pill green huge whatsapp-link" type="button"><span class="wa"><img src="social-icons-WA%20Green.svg" alt="" width="16" height="16"></span>Agendar mi nivelación GRATIS</button>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing">
+  <div class="wrap">
+    <div class="pricing-h">
+      <h2>¿Cuánto cuesta? <span class="g">Hablemos.</span></h2>
+      <p>PLANES FLEXIBLES Y OPCIONES DE PAGO QUE SE ADAPTAN A TI</p>
+      <p class="sub">Recibe el precio exacto y todas las alternativas por WhatsApp en menos de 10 minutos. Sin compromiso.</p>
+    </div>
+    <div class="plans">
+      <div class="plan featured">
+        <p class="pre">PAGO INMEDIATO</p>
+        <h3>Detalle del curso</h3>
+        <p class="module">1 MÓDULO</p>
+        <p class="mod-meta">3 MESES</p>
+        <p class="was">antes $1.280,00</p>
+        <p class="now">$768,00</p>
+        <span class="dto">40% DE DESCUENTO</span>
+        <button class="b whatsapp-link" type="button">Comprar por WhatsApp</button>
+      </div>
+      <div class="plan">
+        <p class="pre">PAGO FINANCIADO</p>
+        <h3>Detalle del curso</h3>
+        <p class="module">1 MÓDULO</p>
+        <p class="mod-meta">3 MESES</p>
+        <p class="was">antes 3 cuotas de $320 + inscripción $320</p>
+        <p class="now">3 cuotas de $240</p>
+        <p class="extra">+ inscripción de $240</p>
+        <span class="dto">25% DE DESCUENTO</span>
+        <button class="b whatsapp-link" type="button">Comprar por WhatsApp</button>
+      </div>
+    </div>
+    <p class="pricing-note">¿Quieres saber qué módulo te toca? Agenda tu nivelación gratuita por WhatsApp y un profesor te ubica en el nivel exacto en 20 minutos.</p>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section class="guarantee">
+  <div class="wrap">
+    <div class="guarantee-card">
+      <div class="seal"><img src="seal-27-years.png" alt="27 años de experiencia" width="96" height="96"></div>
+      <div>
+        <h3>Si no avanzas, no es porque no se pueda. Es porque no estás con nosotros.</h3>
+        <p>27 años, más de 100,000 alumnos, 4 sedes activas en Venezuela y empresas como Nestlé, Toyota y Eurobuilding confiando su capacitación corporativa. Esto no es una academia que abrió ayer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEDES -->
+<section class="sedes">
+  <div class="wrap">
+    <h2>SEDES <b>PRINCIPALES</b></h2>
+    <p class="sub">4 sedes activas · escoge la más cerca, o estudia online en vivo.</p>
+    <div class="sedes-grid">
+      <div class="sede">
+        <p class="city">CARACAS</p>
+        <div class="sede-photo"><img src="ccct.png" alt="Exterior del centro comercial CCCT en Caracas" width="509" height="528" loading="lazy" decoding="async"></div>
+        <p class="name">CCCT</p>
+        <p class="addr">Centro Ciudad Comercial Tamanaco, Sector Yarey, Planta Baja, Local PB 005.</p>
+      </div>
+      <div class="sede">
+        <p class="city">CARACAS</p>
+        <div class="sede-photo"><img src="ucab.png" alt="Campus UCAB Montalbán" width="509" height="528" loading="lazy" decoding="async"></div>
+        <p class="name">UCAB</p>
+        <p class="addr">UCAB Montalbán, Módulo 1, Piso 5, Oficina A1-53.</p>
+      </div>
+      <div class="sede">
+        <p class="city">BARQUISIMETO</p>
+        <div class="sede-photo"><img src="nuevasegovia.png" alt="Torre y zona de Nueva Segovia en Barquisimeto" width="509" height="528" loading="lazy" decoding="async"></div>
+        <p class="name">NUEVA SEGOVIA</p>
+        <p class="addr">Multicentro Empresarial Crystal Plaza, Torre B, 1er Piso, Local 1-B.</p>
+      </div>
+      <div class="sede">
+        <p class="city">PUERTO ORDAZ</p>
+        <div class="sede-photo"><img src="altavista.png" alt="Centro comercial Alta Vista en Puerto Ordaz" width="509" height="528" loading="lazy" decoding="async"></div>
+        <p class="name">ALTA VISTA</p>
+        <p class="addr">Centro Comercial Naraya, Piso 1, Local 123.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTI -->
+<section class="testi">
+  <div class="wrap">
+    <div class="testi-h">
+      <span class="pre">RESULTADOS REALES</span>
+      <h2>Lo que dicen <b>nuestros alumnos</b>.</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="quote">
+        <span class="qm">"</span>
+        <p>Gracias a Fyr Lois logré sentirme más segura al hablar inglés. Mi pronunciación y conocimiento han aumentado <b>gracias a sus clases didácticas</b>.</p>
+        <div class="who">
+          <div class="name">ANDREA PITA</div>
+            <div class="level">ESTUDIANTE NIVEL 4</div>
+            <div class="stars">★★★★★</div>
+        </div>
+      </div>
+      <div class="quote">
+        <span class="qm">"</span>
+        <p>Pasé de no entender nada a tener conversaciones de trabajo en inglés en 5 meses. <b>Los profesores realmente saben enseñar</b>, no solo memorizar.</p>
+        <div class="who">
+          <div class="name">CARLOS MÉNDEZ</div>
+            <div class="level">SUBIÓ DE A2 A B2</div>
+            <div class="stars">★★★★★</div>
+        </div>
+      </div>
+      <div class="quote">
+        <span class="qm">"</span>
+        <p>Probé app, otros institutos, todo. <b>Fyr Lois fue lo único que realmente me hizo hablar con confianza</b>. Recomiendo 100%.</p>
+        <div class="who">
+          <div class="name">MARÍA FERNÁNDEZ</div>
+            <div class="level">PROFESIONAL</div>
+            <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="wrap">
+    <h2>PREGUNTAS <b>FRECUENTES</b></h2>
+    <div class="faq-list" id="faqList">
+      <div class="qa">
+        <div class="qrow"><p class="q">¿CUÁNTO CUESTA?</p><span class="chev">▾</span></div>
+        <p class="a">Contamos con planes flexibles y opciones de pago adaptadas a ti. Escríbenos por WhatsApp y en menos de 10 minutos recibirás toda la información clara, sin compromiso.</p>
+      </div>
+      <div class="qa">
+        <div class="qrow"><p class="q">¿CÓMO SON LAS CLASES (ONLINE VS PRESENCIAL)?</p><span class="chev">▾</span></div>
+        <p class="a">Elige entre modalidad online en vivo o presencial en Caracas, Barquisimeto o Puerto Ordaz. Grupos pequeños y atención personalizada en cualquiera de las dos modalidades.</p>
+      </div>
+      <div class="qa">
+        <div class="qrow"><p class="q">¿QUÉ PASA SI NO PUEDO ASISTIR A UNA CLASE?</p><span class="chev">▾</span></div>
+        <p class="a">Puedes recuperarla cumpliendo con nuestras políticas de reprogramación y disponibilidad.</p>
+      </div>
+      <div class="qa">
+        <div class="qrow"><p class="q">¿EN CUÁNTO TIEMPO VOY A VER RESULTADOS?</p><span class="chev">▾</span></div>
+        <p class="a">La mayoría de nuestros estudiantes nota avances reales en solo 3 meses. En aproximadamente 6 meses, ya podrás dominar tu nivel con mayor seguridad.</p>
+      </div>
+      <div class="qa">
+        <div class="qrow"><p class="q">¿TENGO QUE EMPEZAR DESDE CERO?</p><span class="chev">▾</span></div>
+        <p class="a">No. Hacemos una nivelación gratuita por WhatsApp en 20 minutos para ubicarte en el módulo exacto que te corresponde, desde A1 hasta C1. Empiezas justo donde estás.</p>
+      </div>
+      <div class="qa">
+        <div class="qrow"><p class="q">¿Y SI YA INTENTÉ ANTES Y NO ME FUNCIONÓ?</p><span class="chev">▾</span></div>
+        <p class="a">Es probable que no fuera el método correcto. Apps y videos no son lo mismo que una clase en vivo con un profesor que te ve, te escucha y te corrige. Aquí practicas conversación desde el día 1.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <h2>¿Listo para <span class="g">hablar inglés</span> con <span class="o">confianza</span>?</h2>
+    <p>Agenda tu nivelación GRATIS ahora. <b>Respondemos en menos de 10 minutos por WhatsApp.</b> Te decimos en qué nivel estás, qué plan te conviene y cuándo empezarías. Sin compromiso.</p>
+    <div class="row">
+      <button class="cta-pill green huge whatsapp-link" type="button"><span class="wa"><img src="social-icons-WA%20Green.svg" alt="" width="16" height="16"></span>Empezar mi clase GRATIS</button>
+    </div>
+    <p class="meta">⏱ Respuesta en menos de 10 minutos · WhatsApp · Sin compromiso</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap row">
+    <div>© 2026 Fyr Lois · 27 años enseñando inglés · Caracas · Barquisimeto · Puerto Ordaz</div>
+    <div>Tel +1 (689) 322-5402 · WhatsApp · Instagram · TikTok</div>
+  </div>
+</footer>
+
+<button class="wa-fab whatsapp-link" type="button" aria-label="WhatsApp">
+  <img src="social-icons-WA%20WT.svg" alt="" width="30" height="30">
+</button>
+
+<script>
+  // FAQ
+  document.querySelectorAll('#faqList .qa').forEach(qa=>{
+    qa.addEventListener('click', ()=> qa.classList.toggle('open'));
+  });
+  // Cupos counter
+  const d1=document.getElementById('d1'), d2=document.getElementById('d2'), d3=document.getElementById('d3');
+  let cupos = parseInt(localStorage.getItem('flPresencialCupos')||'95',10);
+  function setCupos(n){
+    n = Math.max(8, Math.min(100, n));
+    cupos = n; localStorage.setItem('flPresencialCupos', n);
+    const s = String(n).padStart(3,'0');
+    d1.textContent = s[0]; d2.textContent = s[1]; d3.textContent = s[2];
+  }
+  setCupos(cupos);
+  setInterval(()=>{ if(Math.random() < 0.15){ setCupos(cupos - 1); } }, 38000);
+  // WhatsApp (+1 689 322-5402 — mismo canal que online-ven)
+  const WA_NUMBER = '16893225402';
+  const WA_MSG = encodeURIComponent('Hola, me interesa el curso de inglés presencial/online de Fyr Lois. Quiero agendar mi nivelación GRATIS.');
+  document.querySelectorAll('.whatsapp-link').forEach(el=>{
+    el.addEventListener('click', e=>{
+      e.preventDefault();
+      window.open(`https://wa.me/${WA_NUMBER}?text=${WA_MSG}`, '_blank');
+    });
+  });
+</script>
+</body>
+</html>
