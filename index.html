@@ -93,8 +93,9 @@
   /* LOGOS */
   .logos{background:var(--soft);padding:36px 0;text-align:center}
   .logos .head{font-weight:900;font-size:11px;letter-spacing:2.5px;color:var(--muted);margin:0 0 18px}
-  .logos .row{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:38px}
-  .logo-slot{height:46px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:11px;color:#a0a8c2;border:1px dashed #c8cee0;padding:0 18px;border-radius:6px;background:#fff;letter-spacing:.5px}
+  .logos .row{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:32px 40px}
+  .logos .row img{height:56px;width:auto;max-width:min(100%,14rem);object-fit:contain;object-position:center;opacity:.85;filter:grayscale(100%)}
+  @media (min-width:768px){ .logos .row img{height:64px;max-width:16rem} }
 
   /* PAIN — what's the current situation */
   .pain{padding:80px 0;background:#fff}
@@ -329,11 +330,11 @@
   <div class="wrap">
     <p class="head">LAS EMPRESAS MÁS GRANDES CONFÍAN EN NOSOTROS</p>
     <div class="row">
-      <div class="logo-slot">CIVG · Centro Italo Venezolano de Guayana</div>
-      <div class="logo-slot">NESTLÉ</div>
-      <div class="logo-slot">TOYOTA</div>
-      <div class="logo-slot">EUROBUILDING HOTELS</div>
-      <div class="logo-slot">ROSA BELA HOTEL &amp; CONVENTION CENTER</div>
+      <img src="civg1.png" alt="CIVG — Centro Italo Venezolano de Guayana" width="200" height="64" loading="lazy" decoding="async">
+      <img src="nestle1.png" alt="Nestlé" width="200" height="64" loading="lazy" decoding="async">
+      <img src="toyota1.png" alt="Toyota" width="200" height="64" loading="lazy" decoding="async">
+      <img src="euro1.png" alt="Eurobuilding Hotels" width="200" height="64" loading="lazy" decoding="async">
+      <img src="rosabela1.png" alt="Rosa Bela Hotel &amp; Convention Center" width="200" height="64" loading="lazy" decoding="async">
     </div>
   </div>
 </section>
